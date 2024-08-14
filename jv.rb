@@ -3,6 +3,7 @@ class Jv < Formula
     homepage "https://github.com/vndr/jv"
     url "https://github.com/vndr/jv/releases/download/v0.1.4/jv_Darwin_x86_64.tar.gz"
     sha256 "a4754f97149bdd5303c6160cbefb72082e4e8955cfdeb6357e0fb6a0f6143014"
+    version "0.1.4"
   
     def install
       bin.install "jv"
