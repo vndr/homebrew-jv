@@ -1,9 +1,9 @@
 class Jv < Formula
     desc "JV IP Tool"
     homepage "https://github.com/vndr/jv"
-    url "https://github.com/vndr/jv/releases/download/v0.1.5/jv_Darwin_x86_64.tar.gz"
-    sha256 "284d74c9f2b048e87082dcf6bfaa14b83dd98e7bbbcdbeeaba1d2baac431051c"
-    version "0.1.4"
+    url "https://github.com/vndr/jv/releases/download/v0.1.8/jv_Darwin_x86_64.tar.gz"
+    sha256 "81e7e4b0e3bf3e5305e22aca031206886b81ba967bca14544b44b4e4b8fbfae2"
+    version "0.1.8"
   
     def install
       bin.install "jv"
@@ -21,19 +21,19 @@ class Jv < Formula
     
     if OS.mac?
       if Hardware::CPU.intel?
-        url "https://github.com/vndr/jv/releases/download/v0.1.5/jv_Darwin_x86_64.tar.gz"
-        sha256 "284d74c9f2b048e87082dcf6bfaa14b83dd98e7bbbcdbeeaba1d2baac431051c"
+        url "https://github.com/vndr/jv/releases/download/v0.1.8/jv_Darwin_x86_64.tar.gz"
+        sha256 "81e7e4b0e3bf3e5305e22aca031206886b81ba967bca14544b44b4e4b8fbfae2"
       elsif Hardware::CPU.arm?
-        url "https://github.com/vndr/jv/releases/download/v0.1.5/jv_Darwin_arm64.tar.gz"
-        sha256 "5df6f81b65cf747c216c57a455c139b16e0e3a1af0fb3e16bc72a2355949a39e"
+        url "https://github.com/vndr/jv/releases/download/v0.1.8/jv_Darwin_arm64.tar.gz"
+        sha256 "73b222f73012d17a513301496d1079fe3225d07ce2b26025e5c5ad16a98a16f0"
       end
     elsif OS.linux?
       if Hardware::CPU.intel?
-        url "https://github.com/vndr/jv/releases/download/v0.1.5/jv_Linux_x86_64.tar.gz"
-        sha256 "1f3536a7ac2a8561c9fd910d812e8b71679ebfedefe9e4f719f14ed0a63bd2b6"
+        url "https://github.com/vndr/jv/releases/download/v0.1.8/jv_Linux_x86_64.tar.gz"
+        sha256 "118d33f20699724151e292a444a5c292aeae34b9c39e27349fb6a3b64fdbb73e"
       elsif Hardware::CPU.arm?
-        url "https://github.com/vndr/jv/releases/download/v0.1.5/jv_Linux_arm64.tar.gz"
-        sha256 "6b4fa8c9a4671a4ae26a9706cac64f1b645e438ea956bc9f03d956df4c847b7c"
+        url "https://github.com/vndr/jv/releases/download/v0.1.8/jv_Linux_arm64.tar.gz"
+        sha256 "34b8aa3db73a9e4126cd1430286b9c8819a59dfa3662661d8905700f357df136"
       end
     end
   
