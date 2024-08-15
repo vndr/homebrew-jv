@@ -1,0 +1,33 @@
+class Jv < Formula
+  desc "JV IP Tool"
+  homepage "https://github.com/vndr/jv"
+  url "https://github.com/vndr/jv/releases/download/{{VERSION}}/jv_Darwin_x86_64.tar.gz"
+  sha256 "{{SHA256_DARWIN_AMD64}}"
+  version "{{VERSION}}"
+
+  if OS.mac?
+    if Hardware::CPU.intel?
+      url "https://github.com/vndr/jv/releases/download/{{VERSION}}/jv_Darwin_x86_64.tar.gz"
+      sha256 "{{SHA256_DARWIN_AMD64}}"
+    elsif Hardware::CPU.arm?
+      url "https://github.com/vndr/jv/releases/download/{{VERSION}}/jv_Darwin_arm64.tar.gz"
+      sha256 "{{SHA256_DARWIN_ARM64}}"
+    end
+  elsif OS.linux?
+    if Hardware::CPU.intel?
+      url "https://github.com/vndr/jv/releases/download/{{VERSION}}/jv_Linux_x86_64.tar.gz"
+      sha256 "{{SHA256_LINUX_AMD64}}"
+    elsif Hardware::CPU.arm?
+      url "https://github.com/vndr/jv/releases/download/{{VERSION}}/jv_Linux_arm64.tar.gz"
+      sha256 "{{SHA256_LINUX_ARM64}}"
+    end
+  end
+
+  def install
+    bin.install "jv"
+  end
+
+  test do
+    system "#{bin}/jv", "--version"
+  end
+end
