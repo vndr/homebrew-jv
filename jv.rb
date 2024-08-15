@@ -1,25 +1,25 @@
 class Jv < Formula
   desc "JV IP Tool"
   homepage "https://github.com/vndr/jv"
-  url "https://github.com/vndr/jv/releases/download/v0.1.15/jv_Darwin_x86_64.tar.gz"
-  sha256 "9dd2e04556aac3cf35d74bb077bb0c05d25752fc3092ed3702111cd173122dc1"
-  version "v0.1.15"
+  url "https://github.com/vndr/jv/releases/download/v0.1.16/jv_Darwin_x86_64.tar.gz"
+  sha256 "c59ace196a40801716d93e977ba780bb60fb07d8f961af46580e8318e604904f"
+  version "v0.1.16"
 
   if OS.mac?
     if Hardware::CPU.intel?
-      url "https://github.com/vndr/jv/releases/download/v0.1.15/jv_Darwin_x86_64.tar.gz"
-      sha256 "9dd2e04556aac3cf35d74bb077bb0c05d25752fc3092ed3702111cd173122dc1"
+      url "https://github.com/vndr/jv/releases/download/v0.1.16/jv_Darwin_x86_64.tar.gz"
+      sha256 "c59ace196a40801716d93e977ba780bb60fb07d8f961af46580e8318e604904f"
     elsif Hardware::CPU.arm?
-      url "https://github.com/vndr/jv/releases/download/v0.1.15/jv_Darwin_arm64.tar.gz"
-      sha256 "948502d6a58b1855f9115f7400394175c801a51c8652a017016451fdb09a36b6"
+      url "https://github.com/vndr/jv/releases/download/v0.1.16/jv_Darwin_arm64.tar.gz"
+      sha256 "bde07c0cfa14fac88c70de698893a5a20012c51b21b716c34ab22fb03f185af2"
     end
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/vndr/jv/releases/download/v0.1.15/jv_Linux_x86_64.tar.gz"
-      sha256 "ad1d0aa4f556abac41f1aa55ed9513393167a190876e260ee35d03e5739130f8"
+      url "https://github.com/vndr/jv/releases/download/v0.1.16/jv_Linux_x86_64.tar.gz"
+      sha256 "53e7808076eaf40f2ac0944d6a20d33ca92f22f6bb06a0ececc72113b6318f73"
     elsif Hardware::CPU.arm?
-      url "https://github.com/vndr/jv/releases/download/v0.1.15/jv_Linux_arm64.tar.gz"
-      sha256 "42b5dfa3eec5d57713358735275550d13d08e67a0e8f01f59932a1003ffe27ab"
+      url "https://github.com/vndr/jv/releases/download/v0.1.16/jv_Linux_arm64.tar.gz"
+      sha256 "b42c67367cd99e1b26c6615cb83022d10da24e150e61fae5fe6307fdd45a6b69"
     end
   end
 
